@@ -69,10 +69,10 @@ ggplot(patients_df, aes(x = patient, y = post_surgical_score,
   geom_hline(yintercept = mean_duck, linetype = "dashed", 
              color = "#E15759", linewidth = 0.7) +
   # Text annotations for means with shape symbols
-  annotate("text", x = max(patients_df$patient) * 0.98, 
+  annotate("text", x = max(patients_df$patient) * 0.99, 
            y = mean_dreamy, label = paste("○", round(mean_dreamy, 2)), 
            color = "#4E79A7", size = 4, hjust = 1, fontface = "bold") +
-  annotate("text", x = max(patients_df$patient) * 0.98, 
+  annotate("text", x = max(patients_df$patient) * 0.99, 
            y = mean_duck, label = paste("△", round(mean_duck, 2)), 
            color = "#E15759", size = 4, hjust = 1, fontface = "bold") +
   # Colorblind-friendly colors and shapes
@@ -190,10 +190,10 @@ ggplot(patients_randomized_df, aes(x = patient, y = post_surgical_score,
   geom_hline(yintercept = mean_duck_rand, linetype = "dashed", 
              color = "#E15759", linewidth = 0.8) +
   # Text annotations for means with shape symbols
-  annotate("text", x = max(patients_randomized_df$patient) * 0.98, 
+  annotate("text", x = max(patients_randomized_df$patient) * 0.99, 
            y = mean_dreamy_rand, label = paste("○", round(mean_dreamy_rand, 2)), 
            color = "#4E79A7", size = 4, hjust = 1, fontface = "bold") +
-  annotate("text", x = max(patients_randomized_df$patient) * 0.98, 
+  annotate("text", x = max(patients_randomized_df$patient) * 0.99, 
            y = mean_duck_rand, label = paste("△", round(mean_duck_rand, 2)), 
            color = "#E15759", size = 4, hjust = 1, fontface = "bold") +
   # Colorblind-friendly colors and shapes
@@ -259,10 +259,10 @@ ggplot(patients_df, aes(x = severity, y = post_surgical_score,
   geom_hline(yintercept = mean_duck_severity, linetype = "dashed", 
              color = "#E15759", linewidth = 0.8) +
   # Text annotations for means positioned appropriately
-  annotate("text", x = max(patients_df$severity) * 0.99, 
+  annotate("text", x = max(patients_df$severity) * 1.00, 
            y = mean_dreamy_severity, label = paste("○", round(mean_dreamy_severity, 2)), 
            color = "#4E79A7", size = 4, hjust = 1, fontface = "bold") +
-  annotate("text", x = max(patients_df$severity) * 0.99, 
+  annotate("text", x = max(patients_df$severity) * 1.00, 
            y = mean_duck_severity, label = paste("△", round(mean_duck_severity, 2)), 
            color = "#E15759", size = 4, hjust = 1, fontface = "bold") +
   # Colorblind-friendly colors and shapes (same scheme as previous figures)
