@@ -190,9 +190,9 @@ ggplot(patients_df, aes(x = patient, y = post_surgical_score,
   geom_point(size = 2.5, alpha = 0.7) +
   # Horizontal dashed lines for means
   geom_hline(yintercept = mean_dreamy, linetype = "dashed", 
-             color = "#4E79A7", linewidth = 0.8) +
+             color = "#4E79A7", linewidth = 0.7) +
   geom_hline(yintercept = mean_duck, linetype = "dashed", 
-             color = "#E15759", linewidth = 0.8) +
+             color = "#E15759", linewidth = 0.7) +
   # Text annotations for means with shape symbols
   annotate("text", x = max(patients_df$patient) * 0.95, 
            y = mean_dreamy, label = paste("○", round(mean_dreamy, 2)), 
